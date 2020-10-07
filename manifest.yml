@@ -1,0 +1,9 @@
+applications:
+- name: spring-boot-site-application
+  memory: 1024M
+  instances: 1
+  random-route: true
+  buildpack: java_buildpack
+  path: target/HanaCRUDApplication-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
